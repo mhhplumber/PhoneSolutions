@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+
+			var time, num;
+
+			async function timer() {
+    			time = new Date().getSeconds() % 10;
+    			document.getElementById("timer").innerHTML = time;
+			}
+
+			function reset() {
+				num = "";
+				document.getElementById("number") = num;
+			}
+
+			function concatNum() {
+				num = num.concat(time);
+				document.getElementById("number") = num;
+			}
+
+
+		</script>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<link rel="icon" href="https://img.clipartfest.com/153204e2efaf274cc3134b546da43a41_green20apple20clipart-clipart-of-green-apple_3097-3526.png">
+
+	    <title>Test referrence</title>
+	</head>
+
+	<body>
+		
+		<div>
+			<div id="timer" onload="timer()">
+				0
+			</div>
+
+			<div id="number">
+				0
+			</div>
+
+		</div>
+
+	</body>
+</html>
